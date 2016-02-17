@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="DHd-rr-Exh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -47,7 +47,7 @@
         <!--Registration View Controller-->
         <scene sceneID="ezb-9m-wac">
             <objects>
-                <viewController id="B7k-2q-fRP" customClass="RegistrationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationViewController" id="B7k-2q-fRP" customClass="RegistrationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QBP-yt-9aN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +105,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gsw-tB-WAx">
-                                        <rect key="frame" x="0.0" y="8" width="414" height="64"/>
+                                        <rect key="frame" x="0.0" y="16" width="414" height="64"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="0.34509803921568627" green="0.66666666666666663" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="15"/>
@@ -136,7 +136,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GOa-Qh-a8r" id="uad-vc-v1Z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" id="SOC-78-hL7" customClass="JVFloatLabeledTextField">
@@ -152,7 +152,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WYF-be-XqL" id="cYz-IY-AXH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" id="k9T-jh-KIM" customClass="JVFloatLabeledTextField">
@@ -168,7 +168,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ru4-Lr-O9g" id="WZV-m6-c7f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="AM4-aj-Gtl" customClass="JVFloatLabeledTextField">
@@ -184,7 +184,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YX5-Y4-YFP" id="ClI-oX-YYE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="yum-Sd-N42" customClass="JVFloatLabeledTextField">
@@ -200,7 +200,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YtW-ox-pzi" id="HJB-UI-vGK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm" textAlignment="natural" minimumFontSize="17" id="j8F-dm-JUp" customClass="JVFloatLabeledTextField">
@@ -213,12 +213,12 @@
                     </tableViewCellContentView>
                 </tableViewCell>
             </objects>
-            <point key="canvasLocation" x="48" y="253"/>
+            <point key="canvasLocation" x="48" y="1094"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="P29-GK-cpw">
             <objects>
-                <viewController id="DHd-rr-Exh" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="DHd-rr-Exh" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Swf-HO-PdO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,7 +239,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Into My Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tcL-Vi-AFf">
                                         <rect key="frame" x="0.0" y="12" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="19"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -276,7 +276,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VMq-BI-zqS">
-                                        <rect key="frame" x="0.0" y="8" width="414" height="64"/>
+                                        <rect key="frame" x="0.0" y="16" width="414" height="64"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="0.34509803919999998" green="0.66666666669999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="15"/>
@@ -304,7 +304,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wQO-7W-MHz" id="GSI-Vj-EGC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="4Ti-Si-N9j" customClass="JVFloatLabeledTextField">
@@ -320,7 +320,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ldn-4u-1Ci" id="yEp-0r-jEz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="iPa-ZG-8za" customClass="JVFloatLabeledTextField">

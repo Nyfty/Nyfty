@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "LoginViewController.h"
+#import "RegistrationViewController.h"
 @interface ViewController ()
 {
     CGRect frame;
@@ -47,7 +48,7 @@
     next.hidden = true;
     skipBtn.hidden = true;
     self.automaticallyAdjustsScrollViewInsets=NO;
-    images = [[NSMutableArray alloc]initWithObjects: [UIImage imageNamed:@"belltower-welcome-main"],[UIImage imageNamed:@"belltower-welcome-intro"],[UIImage imageNamed:@"scroll_imae2@3x"],[UIImage imageNamed:@"scroll_imae3@3x"],[UIImage imageNamed:@"scroll_imae4@3x"], nil];
+    images = [[NSMutableArray alloc]initWithObjects: [UIImage imageNamed:@"belltower-welcome-main"],[UIImage imageNamed:@"belltower-welcome-intro"],[UIImage imageNamed:@"scroll_imae2"],[UIImage imageNamed:@"scroll_imae3"],[UIImage imageNamed:@"scroll_imae4"], nil];
     
     int numberofViews = (int)[images count];
     
@@ -61,16 +62,16 @@
         imgView.frame = frame;
         imgView.image = [images objectAtIndex:i];
         [imgView setUserInteractionEnabled:YES];
-        [scrollView setShowsHorizontalScrollIndicator:NO];
-        [scrollView setShowsVerticalScrollIndicator:NO];
         scrollView.pagingEnabled = YES;
         
         if (i == 0) {
             
             [self setSingleLabelInScroll:@"Your Favorite stores delivered anytime, anywhere."];
+            [self setLogoImageOnScrollView];
             
         }else if (i == 1) {
             
+            [self setLogoImageOnScrollView];
             [self setSingleLabelInScroll:@"Your Favorite stores delivered anytime, anywhere."];
             
         }else if(i == 2) {
@@ -94,26 +95,55 @@
 
 }
 
+-(void)setLogoImageOnScrollView
+{
+    float width = 334;
+    float height = 93;
+    if (IS_IPHONE_5) {
+        width = 250;
+        height = 51;
+    }
+    UIImageView *logoImage = [[UIImageView alloc] init];
+    logoImage.frame = CGRectMake(20, 100, width, height);
+    [logoImage setCenter:CGPointMake(self.view.frame.size.width / 2, 160)];
+    logoImage.image = [UIImage imageNamed:@"nyfty-welcome-logo"];
+    [imgView addSubview:logoImage];
+    [self.view bringSubviewToFront:logoImage];
+}
+
 -(void)setSingleLabelInScroll:(NSString *)text
 {
-    UILabel *label  = [[UILabel alloc] initWithFrame:CGRectMake(([[[UIApplication sharedApplication]delegate] window].frame.size.width - 330)/2,[[[UIApplication sharedApplication]delegate] window].frame.size.height - 280, 350, 38)];
+    float y= [[[UIApplication sharedApplication]delegate] window].frame.size.height - 280;
+    UILabel *label;
+    if (IS_IPHONE_5) {
+        y = [[[UIApplication sharedApplication]delegate] window].frame.size.height - 220;
+        label  = [[UILabel alloc] initWithFrame:CGRectMake(([[[UIApplication sharedApplication]delegate] window].frame.size.width - 250)/2,y, 280, 38)];
+
+    }else{
+        
+        label  = [[UILabel alloc] initWithFrame:CGRectMake(([[[UIApplication sharedApplication]delegate] window].frame.size.width - 330)/2,y, 350, 38)];
+    }
     label.text = text;
     label.textColor = [UIColor whiteColor];
     label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont fontWithName:@"Raleway-Regular" size:24.3];
+    label.font = [UIFont fontWithName:@"Raleway-Regular" size:[ApplicationHelper returnFontSizeWithDynamicSize:24.3]];
     [label setNumberOfLines:2];
     [label sizeToFit];
+    [label setCenter:CGPointMake(self.view.frame.size.width / 2, y)];
     [imgView addSubview:label];
 }
 
 -(void)setlabelsInScroll:(NSString *)firstLabelText andSecond:(NSString *)secondLabelText andLines:(int)lines
 {
     float y = [[[UIApplication sharedApplication]delegate] window].frame.size.height - 265;
+  
+    if (IS_IPHONE_5) {
+        
+    }
     UILabel *label  = [[UILabel alloc] initWithFrame:CGRectMake(([[[UIApplication sharedApplication]delegate] window].frame.size.width - 232)/2,y, 310, 38)];
-    
     label.text = firstLabelText;
     label.textColor = [UIColor whiteColor];
-    label.font = [UIFont fontWithName:@"Raleway-Medium" size:24.3];
+    label.font = [UIFont fontWithName:@"Raleway-Medium" size:[ApplicationHelper returnFontSizeWithDynamicSize:24.3]];
     label.textAlignment = NSTextAlignmentCenter;
     [label setNumberOfLines:0];
     [label sizeToFit];
@@ -143,7 +173,6 @@
 {
     CGFloat pageWidth = scrollView.frame.size.width;
     int page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-    pageControl.currentPage = page;
     if( [scrollView isDragging])
     {
         CGFloat pageWidth = scrollView.frame.size.width;
@@ -164,6 +193,9 @@
     }else if (page == 1) {
         next.hidden = false;
         skipBtn.hidden = false;
+    }else if (page == 3) {
+        next.hidden = false;
+        skipBtn.hidden = false;
     }else if (page == 4){
         next.hidden = true;
         skipBtn.hidden = true;
@@ -175,10 +207,32 @@
 
 -(IBAction)nextBtnAction:(id)sender
 {
-    
+    CGFloat pageWidth = scrollView.frame.size.width;
+    int page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    pageControl.currentPage = page;
+    page = page+1;
+    [scrollView setContentOffset:CGPointMake(pageWidth * page, 0) animated:YES];
+
 }
 
+-(IBAction)skipBtnAction:(id)sender
+{
+    pageControl.currentPage = 4;
+    CGFloat pageWidth = scrollView.frame.size.width;
+    [scrollView setContentOffset:CGPointMake(pageWidth * 4, 0) animated:YES];
+}
 
+-(IBAction)logInBtnAction:(id)sender
+{
+    LoginViewController *push = [[UIStoryboard storyboardWithName:@"Atif" bundle:NULL]instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    [self.navigationController pushViewController:push animated:true];
+}
+
+-(IBAction)getStartedBtnAction:(id)sender
+{
+    RegistrationViewController *push = [[UIStoryboard storyboardWithName:@"Atif" bundle:NULL]instantiateViewControllerWithIdentifier:@"RegistrationViewController"];
+    [self.navigationController pushViewController:push animated:true];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
