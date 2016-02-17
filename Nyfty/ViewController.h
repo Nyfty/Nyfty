@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SMPageControl.h"
+@interface ViewController : UIViewController <UIScrollViewDelegate>
 
-@interface ViewController : UIViewController
-
+@property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, weak) IBOutlet UIButton *getStarted;
+@property (nonatomic, weak) IBOutlet UIButton *logIn;
+@property (nonatomic, weak) IBOutlet UIButton *next;
+@property (nonatomic, weak) IBOutlet UIButton *skipBtn;
+@property (nonatomic, weak) IBOutlet SMPageControl *pageControl;
 
 @end
 
