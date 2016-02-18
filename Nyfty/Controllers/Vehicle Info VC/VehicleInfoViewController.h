@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface VehicleInfoViewController : UIViewController
-
+{
+    int selectedBtnTag;
+    int previousSelectedTag;
+}
 @property (nonatomic, retain) IBOutletCollection(UIButton) NSArray *colorBtns;
 @property (nonatomic, weak) IBOutlet UIImageView *carImageView;
 

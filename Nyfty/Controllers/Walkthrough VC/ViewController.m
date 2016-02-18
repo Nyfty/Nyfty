@@ -224,8 +224,9 @@
 
 -(IBAction)logInBtnAction:(id)sender
 {
-    LoginViewController *push = [[UIStoryboard storyboardWithName:@"Atif" bundle:NULL]instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    LoginViewController *push = [[UIStoryboard storyboardWithName:@"Atif" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"LoginViewController"];
     [self.navigationController pushViewController:push animated:true];
+    
 }
 
 -(IBAction)getStartedBtnAction:(id)sender

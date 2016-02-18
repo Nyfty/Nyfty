@@ -24,6 +24,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    previousSelectedTag = 5;
+    
+    for (UIButton *button in colorBtns) {
+        if (button.tag == previousSelectedTag) {
+            UIImageView *checkImageView = [[UIImageView alloc] initWithFrame:CGRectMake(7, 7, 24, 24)];
+            [checkImageView setImage:[UIImage imageNamed:@"checkmark-white"]];
+            [button addSubview:checkImageView];
+        }
+        
+    }
     
     for(NSLayoutConstraint *constraint in self.rightConstraint)
     {
@@ -73,8 +83,33 @@
 
 - (IBAction)ColorBtnsAction:(id)sender
 {
-    int tag = (int)[sender tag];
-    [self setImageOfCar:tag];
+    selectedBtnTag = (int)[sender tag];
+    NSLog(@"Selected Button = %d",selectedBtnTag);
+    UIButton *btn = (UIButton*)sender;
+    for (UIButton *button in colorBtns) {
+        if (button.tag == previousSelectedTag) {
+            for (UIView *subview in button.subviews) {
+                if ([subview isKindOfClass:[UIImageView class]]) {
+                    [subview removeFromSuperview];
+                }
+            }
+        }
+        if ([button isEqual:btn]) {
+            if (button.tag == 0 || button.tag == 1) {
+                UIImageView *checkImageView = [[UIImageView alloc] initWithFrame:CGRectMake(7, 7, 24, 24)];
+                [checkImageView setImage:[UIImage imageNamed:@"checkmark-darkblue"]];
+                [button addSubview:checkImageView];
+            }else{
+                UIImageView *checkImageView = [[UIImageView alloc] initWithFrame:CGRectMake(7, 7, 24, 24)];
+                [checkImageView setImage:[UIImage imageNamed:@"checkmark-white"]];
+                [button addSubview:checkImageView];
+            }
+            
+        }
+    }
+    
+    previousSelectedTag = selectedBtnTag;
+    [self setImageOfCar:selectedBtnTag];
 }
 
 -(void)setImageOfCar:(int)tag

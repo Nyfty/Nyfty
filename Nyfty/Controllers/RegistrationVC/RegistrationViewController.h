@@ -20,5 +20,6 @@
 @property (nonatomic , strong) IBOutlet UIView *registrationHeaderView;
 @property (nonatomic , strong) IBOutlet UIView *registrationFooterView;
 @property (nonatomic , strong) IBOutlet UITableView *registrationTableView;
+@property (nonatomic , strong) IBOutlet UIButton *btnFacebook;
 
 @end
