@@ -18,7 +18,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.registrationTableView.tableHeaderView = self.registrationHeaderView;
-    //self.registrationTableView.tableFooterView = self.registrationFooterView;
+    self.registrationTableView.tableFooterView = [[UIView alloc] init];
+    self.btnFacebook.layer.cornerRadius = 3.33f;
+}
+
+-(IBAction)backButtonPressed:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
@@ -53,6 +59,8 @@
     {
         regCell = self.confirmPasswordCell;
     }
+    
+    
     
     return regCell;
 }

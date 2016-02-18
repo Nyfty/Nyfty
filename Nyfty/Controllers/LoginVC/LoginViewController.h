@@ -16,5 +16,6 @@
 @property (nonatomic , strong) IBOutlet UIView *loginHeaderView;
 @property (nonatomic , strong) IBOutlet UIView *loginFooterView;
 @property (nonatomic , strong) IBOutlet UITableView *loginTableView;
+@property (nonatomic , strong) IBOutlet UIButton *btnFacebook;
 
 @end

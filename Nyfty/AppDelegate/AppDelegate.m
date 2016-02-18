@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "IQKeyboardManager.h"
-
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +27,8 @@
     IQKeyboardManagerObj.shouldResignOnTouchOutside          = YES;
     IQKeyboardManagerObj.enableAutoToolbar                   = YES;
 
+    
+    
     return YES;
 }
 

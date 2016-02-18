@@ -30,6 +30,8 @@
 		6A19B5481C74DD8D0014DA12 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A19B5341C74DD8D0014DA12 /* JVFloatLabeledTextView.m */; };
 		6A19B5491C74DD8D0014DA12 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A19B5361C74DD8D0014DA12 /* NSString+TextDirectionality.m */; };
 		6A19B54A1C74DD8D0014DA12 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A19B5391C74DD8D0014DA12 /* SMPageControl.m */; };
+		6A22106B1C75939D00553A25 /* SelfieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A22106A1C75939D00553A25 /* SelfieViewController.m */; };
+		6A22106F1C75B84A00553A25 /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A22106E1C75B84900553A25 /* HexColors.m */; };
 		6AF5F8FE1C731ACA0080E974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5F8FD1C731ACA0080E974 /* main.m */; };
 		6AF5F9091C731ACA0080E974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF5F9081C731ACA0080E974 /* Assets.xcassets */; };
 		6AF5F90C1C731ACA0080E974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF5F90A1C731ACA0080E974 /* LaunchScreen.storyboard */; };
@@ -125,6 +127,10 @@
 		6A19B5361C74DD8D0014DA12 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
 		6A19B5381C74DD8D0014DA12 /* SMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageControl.h; sourceTree = "<group>"; };
 		6A19B5391C74DD8D0014DA12 /* SMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPageControl.m; sourceTree = "<group>"; };
+		6A2210691C75939D00553A25 /* SelfieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieViewController.h; sourceTree = "<group>"; };
+		6A22106A1C75939D00553A25 /* SelfieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieViewController.m; sourceTree = "<group>"; };
+		6A22106D1C75B84900553A25 /* HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
+		6A22106E1C75B84900553A25 /* HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColors.m; sourceTree = "<group>"; };
 		6AF5F8F91C731ACA0080E974 /* Nyfty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nyfty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF5F8FD1C731ACA0080E974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6AF5F9081C731ACA0080E974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,6 +211,7 @@
 		6A19B43C1C74754E0014DA12 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6A2210681C75938900553A25 /* SelfieVC */,
 				D62D2EC41C7500B300B9B994 /* Vehicle Info VC */,
 				D62D2EAD1C74E54700B9B994 /* Walkthrough VC */,
 				6A19B48A1C7487020014DA12 /* LoginVC */,
@@ -225,6 +232,7 @@
 		6A19B4851C7485680014DA12 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				6A22106C1C75B84900553A25 /* HexColor */,
 				6A19B50E1C74DD8D0014DA12 /* IQKeyBoardManager */,
 				6A19B5301C74DD8D0014DA12 /* JVFloatLabeledTextField */,
 				6A19B5371C74DD8D0014DA12 /* SMPageController */,
@@ -355,6 +363,24 @@
 				6A19B5391C74DD8D0014DA12 /* SMPageControl.m */,
 			);
 			path = SMPageController;
+			sourceTree = "<group>";
+		};
+		6A2210681C75938900553A25 /* SelfieVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A2210691C75939D00553A25 /* SelfieViewController.h */,
+				6A22106A1C75939D00553A25 /* SelfieViewController.m */,
+			);
+			path = SelfieVC;
+			sourceTree = "<group>";
+		};
+		6A22106C1C75B84900553A25 /* HexColor */ = {
+			isa = PBXGroup;
+			children = (
+				6A22106D1C75B84900553A25 /* HexColors.h */,
+				6A22106E1C75B84900553A25 /* HexColors.m */,
+			);
+			path = HexColor;
 			sourceTree = "<group>";
 		};
 		6AF5F8F01C731AC90080E974 = {
@@ -654,9 +680,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A19B54A1C74DD8D0014DA12 /* SMPageControl.m in Sources */,
+				6A22106F1C75B84A00553A25 /* HexColors.m in Sources */,
 				D62D2EC31C74FBFC00B9B994 /* CustomTextFieldFont.m in Sources */,
 				6A19B53F1C74DD8D0014DA12 /* IQKeyboardManager.m in Sources */,
 				6AF5F8FE1C731ACA0080E974 /* main.m in Sources */,
+				6A22106B1C75939D00553A25 /* SelfieViewController.m in Sources */,
 				D62D2EC21C74FBFC00B9B994 /* CustomButtonFont.m in Sources */,
 				6A19B5491C74DD8D0014DA12 /* NSString+TextDirectionality.m in Sources */,
 				6A19B48E1C7487150014DA12 /* RegistrationViewController.m in Sources */,

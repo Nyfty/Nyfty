@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "SelfieViewController.h"
 
 @interface LoginViewController ()
 
@@ -19,6 +20,18 @@
     // Do any additional setup after loading the view.
     self.loginTableView.tableHeaderView = self.loginHeaderView;
     self.loginTableView.tableFooterView = [[UIView alloc] init];
+    self.btnFacebook.layer.cornerRadius = 3.33f;
+}
+
+-(IBAction)backButtonPressed:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(IBAction)loginButtonPressed:(id)sender
+{
+    SelfieViewController *selfieVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SelfieViewController_Id"];
+    [self.navigationController pushViewController:selfieVC animated:YES];
 }
 
 #pragma mark UITableViewDataSource,UITableViewDelegate
