@@ -202,21 +202,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uQ-gD-1fW">
                                         <rect key="frame" x="0.0" y="6" width="83" height="15"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="83" id="q8K-bv-7Kj"/>
-                                            <constraint firstAttribute="height" constant="15" id="yjc-KZ-TJx"/>
+                                            <constraint firstAttribute="height" constant="15" id="OBB-fH-Ega"/>
+                                            <constraint firstAttribute="width" constant="83" id="sAh-q1-VLG"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
                                         <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Toyota" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJr-Bd-xMx" customClass="CustomTextFieldFont">
-                                        <rect key="frame" x="0.0" y="15" width="343" height="49"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="jJr-Bd-xMx" secondAttribute="height" multiplier="7:1" id="bXK-MM-N62"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="19.799999237060547"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5x-wI-zsN">
                                         <rect key="frame" x="0.0" y="65" width="343" height="1"/>
                                         <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
@@ -227,21 +219,23 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1A-bo-ktL">
                                         <rect key="frame" x="0.0" y="72" width="83" height="15"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="15" id="Y97-6E-UWI"/>
-                                            <constraint firstAttribute="width" constant="83" id="Zrc-vl-jW4"/>
+                                            <constraint firstAttribute="width" constant="83" id="6OY-yF-2Ng"/>
+                                            <constraint firstAttribute="height" constant="15" id="hnw-6s-Am5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
                                         <color key="textColor" red="0.61960784310000006" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Highlander" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1N-yd-CjQ" customClass="CustomTextFieldFont">
-                                        <rect key="frame" x="0.0" y="80" width="343" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ys-qJ-bO9">
+                                        <rect key="frame" x="0.0" y="81" width="343" height="49"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="a1N-yd-CjQ" secondAttribute="height" multiplier="343:50" id="d6c-gL-eP0"/>
+                                            <constraint firstAttribute="width" secondItem="6ys-qJ-bO9" secondAttribute="height" multiplier="7:1" id="OYj-Fv-oRZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="19.799999237060547"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <state key="normal" title="Highlander">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEd-sD-OJa">
                                         <rect key="frame" x="0.0" y="130" width="343" height="1"/>
                                         <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -249,26 +243,36 @@
                                             <constraint firstAttribute="height" constant="1" id="vWy-iG-lbz"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8a-wm-UX4">
+                                        <rect key="frame" x="0.0" y="15" width="343" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="O8a-wm-UX4" secondAttribute="height" multiplier="7:1" id="nKt-Sz-57G"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="19.799999237060547"/>
+                                        <state key="normal" title="Toyota">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="jJr-Bd-xMx" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="2o9-tO-Ygl"/>
                                     <constraint firstAttribute="trailing" secondItem="H5x-wI-zsN" secondAttribute="trailing" id="3Bi-ws-KPJ"/>
+                                    <constraint firstItem="AEd-sD-OJa" firstAttribute="top" secondItem="6ys-qJ-bO9" secondAttribute="bottom" id="3Jj-Ud-9RI"/>
                                     <constraint firstItem="AEd-sD-OJa" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="3O0-MY-ZyY"/>
+                                    <constraint firstItem="H5x-wI-zsN" firstAttribute="top" secondItem="O8a-wm-UX4" secondAttribute="bottom" constant="1" id="4Oz-rD-nsm"/>
                                     <constraint firstAttribute="trailing" secondItem="AEd-sD-OJa" secondAttribute="trailing" id="5be-j3-aub"/>
-                                    <constraint firstAttribute="trailing" secondItem="a1N-yd-CjQ" secondAttribute="trailing" id="7ne-qk-Lbl"/>
-                                    <constraint firstItem="jJr-Bd-xMx" firstAttribute="top" secondItem="7uQ-gD-1fW" secondAttribute="bottom" constant="-6" id="8yX-Le-HIS"/>
                                     <constraint firstAttribute="bottom" secondItem="AEd-sD-OJa" secondAttribute="bottom" id="Ao6-2a-mZc"/>
-                                    <constraint firstItem="AEd-sD-OJa" firstAttribute="top" secondItem="a1N-yd-CjQ" secondAttribute="bottom" id="BLF-Zs-QmB"/>
-                                    <constraint firstItem="a1N-yd-CjQ" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="PfN-Rp-9oo"/>
-                                    <constraint firstAttribute="trailing" secondItem="jJr-Bd-xMx" secondAttribute="trailing" id="TTp-zL-bBP"/>
+                                    <constraint firstItem="7uQ-gD-1fW" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="Lct-zj-7Ph"/>
+                                    <constraint firstItem="b1A-bo-ktL" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="Mv6-ng-IyR"/>
+                                    <constraint firstItem="6ys-qJ-bO9" firstAttribute="top" secondItem="b1A-bo-ktL" secondAttribute="bottom" constant="-6" id="S4B-0h-y0t"/>
+                                    <constraint firstItem="6ys-qJ-bO9" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="TgZ-kT-kLF"/>
                                     <constraint firstItem="H5x-wI-zsN" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="Ula-ef-0tz"/>
+                                    <constraint firstItem="b1A-bo-ktL" firstAttribute="top" secondItem="H5x-wI-zsN" secondAttribute="bottom" constant="6" id="VI4-rR-fZO"/>
                                     <constraint firstAttribute="width" secondItem="74f-dJ-Nbc" secondAttribute="height" multiplier="343:131" id="WRA-c6-r2S"/>
-                                    <constraint firstItem="b1A-bo-ktL" firstAttribute="top" secondItem="H5x-wI-zsN" secondAttribute="bottom" constant="6" id="aSu-72-Zpl"/>
-                                    <constraint firstItem="H5x-wI-zsN" firstAttribute="top" secondItem="jJr-Bd-xMx" secondAttribute="bottom" constant="1" id="awL-Ck-CYS"/>
-                                    <constraint firstItem="b1A-bo-ktL" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="c9c-Xx-DC0"/>
-                                    <constraint firstItem="7uQ-gD-1fW" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="flE-KR-vlg"/>
-                                    <constraint firstItem="a1N-yd-CjQ" firstAttribute="top" secondItem="b1A-bo-ktL" secondAttribute="bottom" constant="-7" id="gLf-Kc-6r5"/>
+                                    <constraint firstItem="O8a-wm-UX4" firstAttribute="leading" secondItem="74f-dJ-Nbc" secondAttribute="leading" id="Zik-qH-TVa"/>
+                                    <constraint firstAttribute="trailing" secondItem="6ys-qJ-bO9" secondAttribute="trailing" id="gff-0c-Qa1"/>
+                                    <constraint firstItem="O8a-wm-UX4" firstAttribute="top" secondItem="7uQ-gD-1fW" secondAttribute="bottom" constant="-6" id="ipe-fq-PqX"/>
+                                    <constraint firstAttribute="trailing" secondItem="O8a-wm-UX4" secondAttribute="trailing" id="kSb-bQ-2bp"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8c-ga-tXO">
@@ -284,122 +288,155 @@
                                         <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJp-VC-T31">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJp-VC-T31">
                                         <rect key="frame" x="0.0" y="101" width="43" height="43"/>
                                         <color key="backgroundColor" red="0.9137254901960784" green="0.11764705882352941" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="7qM-lg-BFM"/>
                                             <constraint firstAttribute="width" constant="43" id="SgM-ms-pOe"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="s4v-CD-XJ7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-61-ZbR">
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdu-61-ZbR">
                                         <rect key="frame" x="120" y="101" width="43" height="43"/>
                                         <color key="backgroundColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="B08-py-fJk"/>
                                             <constraint firstAttribute="width" constant="43" id="SzC-Hy-oAC"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="vi3-ww-83r"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xf-Up-u3t">
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xf-Up-u3t">
                                         <rect key="frame" x="180" y="101" width="43" height="43"/>
                                         <color key="backgroundColor" red="0.47450980392156861" green="0.33333333333333331" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="yaW-5d-77d"/>
                                             <constraint firstAttribute="width" constant="43" id="zFZ-BE-68h"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="rol-ay-Swh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNw-LR-5Dm">
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNw-LR-5Dm">
                                         <rect key="frame" x="240" y="101" width="43" height="43"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="43" id="LLs-Dm-vrU"/>
                                             <constraint firstAttribute="height" constant="43" id="dCs-ID-pvH"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="U8A-D1-58M"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wls-Qk-pss">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wls-Qk-pss">
                                         <rect key="frame" x="60" y="43" width="43" height="43"/>
                                         <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="gZx-iq-fCJ"/>
                                             <constraint firstAttribute="width" constant="43" id="xca-KX-quU"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="thg-FE-jNf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30z-gK-GBu">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30z-gK-GBu">
                                         <rect key="frame" x="120" y="43" width="43" height="43"/>
                                         <color key="backgroundColor" red="1" green="0.59607843137254901" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="43" id="YZ2-1D-6v9"/>
                                             <constraint firstAttribute="height" constant="43" id="xpI-qA-rF8"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="qaz-x1-dXb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imh-cO-pn3">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imh-cO-pn3">
                                         <rect key="frame" x="180" y="43" width="43" height="43"/>
                                         <color key="backgroundColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="43" id="Qci-eH-oVR"/>
                                             <constraint firstAttribute="height" constant="43" id="fY9-dc-zBx"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="UJX-HL-mbW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ea9-Bt-aDz">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ea9-Bt-aDz">
                                         <rect key="frame" x="240" y="43" width="43" height="43"/>
                                         <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="6bc-fx-mgh"/>
                                             <constraint firstAttribute="width" constant="43" id="Kd9-dT-74S"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="q09-hh-DgQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-qZ-uWl">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-qZ-uWl">
                                         <rect key="frame" x="300" y="43" width="43" height="43"/>
                                         <color key="backgroundColor" red="0.61176470588235299" green="0.15294117647058825" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="43" id="Rzc-Vh-0Yl"/>
                                             <constraint firstAttribute="height" constant="43" id="gkA-EB-Rra"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="Ltp-HO-jz2"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9D-Xf-ULb">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9D-Xf-ULb">
                                         <rect key="frame" x="0.0" y="43" width="43" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="Eys-zA-Lsh"/>
                                             <constraint firstAttribute="width" constant="43" id="krA-DI-hcM"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="Q7j-ez-0CI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a5-zF-BRG">
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a5-zF-BRG">
                                         <rect key="frame" x="60" y="101" width="43" height="43"/>
                                         <color key="backgroundColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="5SD-ur-3nS"/>
                                             <constraint firstAttribute="width" constant="43" id="sb5-Ai-Ikd"/>
                                         </constraints>
+                                        <state key="normal" image="checkmark-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="ColorBtnsAction:" destination="Qtp-ns-K8f" eventType="touchUpInside" id="gl6-8b-cAb"/>
                                         </connections>
@@ -551,6 +588,7 @@
         <image name="NextBtnImageBlue" width="414" height="57"/>
         <image name="NextButtonImage" width="414" height="57"/>
         <image name="Sample-Car-Silhouette-purple" width="220" height="85"/>
+        <image name="checkmark-white" width="24" height="24"/>
         <image name="nav-arrow-back-blue" width="24" height="24"/>
     </resources>
 </document>

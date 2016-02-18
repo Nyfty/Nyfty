@@ -67,6 +67,11 @@
             button.layer.borderColor = ([UIColor colorWithRed:226.0/255.0 green:226.0/255.0 blue:226.0/255.0 alpha:1.0].CGColor);
         }
         button.layer.masksToBounds = true;
+        if (button.tag == 5) {
+//            [button setImage:[UIImage imageNamed:@"checkmark-white"] forState:UIControlStateNormal];
+        }else{
+            [button setImage:nil forState:UIControlStateNormal];
+        }
     }
     
 }
@@ -75,6 +80,13 @@
 {
     int tag = (int)[sender tag];
     [self setImageOfCar:tag];
+    for (UIButton *btn in colorBtns) {
+        if (btn.tag == tag) {
+            [btn setImage:[UIImage imageNamed:@"checkmark-white"] forState:UIControlStateNormal];
+        }else{
+            [btn setImage:nil forState:UIControlStateNormal];
+        }
+    }
 }
 
 -(void)setImageOfCar:(int)tag
@@ -86,7 +98,6 @@
         case 1:
             carImageView.image = [UIImage imageNamed:@"Sample-Car-Silhouette-Yellow"];
             break;
-            
         case 2:
             carImageView.image = [UIImage imageNamed:@"Sample-Car-Silhouette-Orange"];
             break;
