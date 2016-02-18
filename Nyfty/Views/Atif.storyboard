@@ -21,6 +21,7 @@
             <string>Raleway-Medium</string>
             <string>Raleway-Medium</string>
             <string>Raleway-Medium</string>
+            <string>Raleway-Medium</string>
         </mutableArray>
         <mutableArray key="Raleway-SemiBold.ttf">
             <string>Raleway-SemiBold</string>
@@ -123,6 +124,9 @@
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signupButtonPressed:" destination="B7k-2q-fRP" eventType="touchUpInside" id="ele-9G-WSF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -358,7 +362,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="4Ti-Si-N9j" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="40" y="15" width="333" height="30"/>
+                                <rect key="frame" x="40" y="10" width="333" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="19.870000839233398"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -379,7 +383,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="iPa-ZG-8za" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="40" y="15" width="333" height="30"/>
+                                <rect key="frame" x="40" y="10" width="333" height="40"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="19.870000839233398"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -403,6 +407,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JAP-Hu-QBl">
+                                <rect key="frame" x="2" y="28" width="55" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nav-arrow-back-blue"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Amv-cI-kxJ" eventType="touchUpInside" id="9eg-4c-qOM"/>
+                                    <action selector="backButtonPressed:" destination="DHd-rr-Exh" eventType="touchUpInside" id="Dqe-do-c5r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9en-bp-e8g">
+                                <rect key="frame" x="355" y="28" width="55" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="16.559999465942383"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.34509803919999998" green="0.66666666669999997" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="DHd-rr-Exh" eventType="touchUpInside" id="eQa-Dr-KoY"/>
+                                    <action selector="nextAndSkipButtonPressed:" destination="Amv-cI-kxJ" eventType="touchUpInside" id="Hxu-ee-S8Q"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Selfie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y6c-Jh-LbG">
                                 <rect key="frame" x="169" y="56" width="77" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -440,11 +465,17 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextAndSkipButtonPressed:" destination="Amv-cI-kxJ" eventType="touchUpInside" id="4a6-2T-e4P"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DrK-pb-G1G">
                                 <rect key="frame" x="370" y="695" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nav-arrow-forward-white"/>
+                                <connections>
+                                    <action selector="nextAndSkipButtonPressed:" destination="Amv-cI-kxJ" eventType="touchUpInside" id="CzH-Dy-qp3"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-blue" id="ntj-HA-OCu">
                                 <rect key="frame" x="59" y="431" width="20" height="20"/>
@@ -455,8 +486,10 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="btnBack" destination="JAP-Hu-QBl" id="RJc-h1-n9o"/>
                         <outlet property="btnCamera" destination="SxG-4h-R4c" id="vNa-m6-Eya"/>
                         <outlet property="btnNext" destination="9J2-91-gf1" id="6Jg-1j-5Si"/>
+                        <outlet property="btnSkip" destination="9en-bp-e8g" id="iiw-m2-diw"/>
                         <outlet property="cameraImageview" destination="ntj-HA-OCu" id="lV1-OU-Ebq"/>
                         <outlet property="userProfileImage" destination="V7q-4x-Yrq" id="Ia7-vq-VDz"/>
                     </connections>

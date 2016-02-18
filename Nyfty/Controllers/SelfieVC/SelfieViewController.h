@@ -12,6 +12,9 @@
 
 
 @property (nonatomic , strong) IBOutlet UIButton *btnCamera;
+@property (nonatomic , strong) IBOutlet UIButton *btnBack;
+@property (nonatomic , strong) IBOutlet UIButton *btnSkip;
+
 @property (nonatomic , strong) IBOutlet UIButton *btnNext;
 @property (nonatomic , strong) IBOutlet UIImageView *cameraImageview;
 

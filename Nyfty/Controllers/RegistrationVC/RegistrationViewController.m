@@ -7,6 +7,7 @@
 //
 
 #import "RegistrationViewController.h"
+#import "SelfieViewController.h"
 
 @interface RegistrationViewController ()
 
@@ -25,6 +26,12 @@
 -(IBAction)backButtonPressed:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(IBAction)signupButtonPressed:(id)sender
+{
+    SelfieViewController *selfieVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SelfieViewController_Id"];
+    [self.navigationController pushViewController:selfieVC animated:YES];
 }
 
 

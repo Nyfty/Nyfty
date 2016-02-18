@@ -8,6 +8,7 @@
 
 #import "SelfieViewController.h"
 #import "HexColors.h"
+#import "VehicleInfoViewController.h"
 
 
 @interface SelfieViewController ()
@@ -30,6 +31,21 @@
     self.btnNext.enabled = false;
 }
 
+
+-(IBAction)backButtonPressed:(id)sender
+{
+    self.ImagePickerVC = [[UIImagePickerController alloc] init];
+    self.ImagePickerVC.delegate = self;
+    [self.ImagePickerVC setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    [self.ImagePickerVC setAllowsEditing:YES];
+    [self presentViewController:self.ImagePickerVC animated:YES completion:nil];
+}
+
+-(IBAction)nextAndSkipButtonPressed:(id)sender
+{
+    VehicleInfoViewController *vehicleVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"VehicleInfoViewController"];
+    [self.navigationController pushViewController:vehicleVC animated:true];
+}
 
 //Choose Photo Button Tapped
 - (IBAction)addPictureButton:(id)sender
@@ -93,6 +109,7 @@
     self.btnNext.enabled = true;
     [self.btnCamera setTitle:@"Choose Alternate Photo" forState:UIControlStateNormal];
     [self.cameraImageview setImage:[UIImage imageNamed:@"checkmark-darkblue"]];
+    self.btnBack.hidden = false;
     //[self callWebServiceToUpdateUserPhoto];
     [picker dismissViewControllerAnimated:YES completion:^{
         
