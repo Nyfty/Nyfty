@@ -15,5 +15,10 @@
 }
 @property (nonatomic, retain) IBOutletCollection(UIButton) NSArray *colorBtns;
 @property (nonatomic, weak) IBOutlet UIImageView *carImageView;
+@property (nonatomic, weak) IBOutlet UIButton *vehicleMakeBtn;
+@property (nonatomic, weak) IBOutlet UIButton *vehicleModelBtn;
+
+@property (nonatomic, strong) ModelLocator *model;
+
 
 @end

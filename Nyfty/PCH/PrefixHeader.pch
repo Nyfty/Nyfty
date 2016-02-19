@@ -30,10 +30,14 @@
 
 
 #import "ApplicationHelper.h"
+
 #import "ValidationHelper.h"
 #import "TSMessage.h"
 #import "HexColors.h"
 #import "IQKeyboardManager.h"
+
+
+#import "ModelLocator.h"
 
 
 #endif /* PrefixHeader_pch */

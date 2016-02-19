@@ -71,12 +71,8 @@
 //        fontSize = [UIScreen mainScreen].bounds.size.width/414 *labelSize;
 //    }
     
-    if (SCREEN_WIDTH == 320) {
-        fontSize =  labelSize/1.5;
-    }else if (SCREEN_WIDTH == 375){
-        fontSize =  labelSize/1.25;
-    }else
-        fontSize = labelSize;
+    fontSize = [UIScreen mainScreen].bounds.size.width/414 * labelSize;
+
     
     return fontSize;
 }
