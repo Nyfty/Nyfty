@@ -7,8 +7,15 @@
 //
 
 #import "VehicleInfoViewController.h"
+#import "VehicleMakeViewController.h"
+#import "VehicleModelViewController.h"
+#import "SelfieViewController.h"
+#import "EnterPhoneNumerVC.h"
 
 @interface VehicleInfoViewController ()
+{
+    BOOL isPresent;
+}
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *rightConstraint;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *widthOfColorBtns;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *heightOfColorBtns;
@@ -20,11 +27,27 @@
 
 @implementation VehicleInfoViewController
 
-@synthesize colorBtns,carImageView;
+@synthesize colorBtns,carImageView,vehicleMakeBtn,vehicleModelBtn,model;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    model = [ModelLocator getInstance];
+    [self setDesignAndConstraints];
     
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    if (![model.makeName isEqualToString:@""] || model.makeName != nil) {
+        [vehicleMakeBtn setTitle:model.makeName forState:UIControlStateNormal];
+    }if (![model.modelName isEqualToString:@""] || model.modelName != nil){
+        [vehicleModelBtn setTitle:model.modelName forState:UIControlStateNormal];
+    }
+    self.navigationController.navigationBarHidden = true;
+}
+
+-(void)setDesignAndConstraints
+{
     for(NSLayoutConstraint *constraint in self.rightConstraint)
     {
         if (IS_IPHONE_6){
@@ -68,12 +91,11 @@
         }
         button.layer.masksToBounds = true;
         if (button.tag == 5) {
-//            [button setImage:[UIImage imageNamed:@"checkmark-white"] forState:UIControlStateNormal];
+            
         }else{
             [button setImage:nil forState:UIControlStateNormal];
         }
     }
-    
 }
 
 - (IBAction)ColorBtnsAction:(id)sender
@@ -130,9 +152,45 @@
     }
 }
 
+-(IBAction)selectVehicleMake:(id)sender
+{
+    VehicleMakeViewController *vehicleMakeVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"VehicleMakeViewController"];
+    [self.navigationController pushViewController:vehicleMakeVC animated:true];
+
+}
+
+-(IBAction)selectVehicleModel:(id)sender
+{
+    VehicleModelViewController *vehicleModelVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"VehicleModelViewController"];
+    [self.navigationController pushViewController:vehicleModelVC animated:true];
+
+}
+
 -(IBAction)goBack:(id)sender
 {
-    [self.navigationController popViewControllerAnimated:true];
+    SelfieViewController *infoController = [[UIStoryboard storyboardWithName:@"Atif" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"SelfieViewController_Id"];
+    
+    NSArray *array = [self.navigationController viewControllers];
+    for (int i = 0; i < array.count; i ++) {
+        UIViewController *controller = [array objectAtIndex:i];
+        
+        if ([controller isMemberOfClass:[SelfieViewController class]]) {
+            infoController = (SelfieViewController*)controller;
+            isPresent = YES;
+            [self.navigationController popToViewController:infoController animated:YES];
+            break;
+        }else
+            isPresent = NO;
+    }
+    if (isPresent == NO) {
+        [self.navigationController pushViewController:infoController animated:YES];
+    }
+}
+
+-(IBAction)NextBtnAction:(id)sender
+{
+    EnterPhoneNumerVC *phoneNumberVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"EnterPhoneNumerVC"];
+    [self.navigationController pushViewController:phoneNumberVC animated:true];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -42,6 +42,11 @@
 		D62D2EC21C74FBFC00B9B994 /* CustomButtonFont.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D2EBF1C74FBFC00B9B994 /* CustomButtonFont.m */; };
 		D62D2EC31C74FBFC00B9B994 /* CustomTextFieldFont.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D2EC11C74FBFC00B9B994 /* CustomTextFieldFont.m */; };
 		D62D2EC71C7500C800B9B994 /* VehicleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62D2EC61C7500C800B9B994 /* VehicleInfoViewController.m */; };
+		D65C268E1C771CBB00C39AAB /* VehicleMakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C268D1C771CBB00C39AAB /* VehicleMakeViewController.m */; };
+		D65C26911C771CC900C39AAB /* VehicleModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C26901C771CC900C39AAB /* VehicleModelViewController.m */; };
+		D65C26951C772DB100C39AAB /* SelectedModelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C26941C772DB100C39AAB /* SelectedModelTableViewCell.m */; };
+		D65C26991C774B0500C39AAB /* ModelLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C26981C774B0500C39AAB /* ModelLocator.m */; };
+		D65C269D1C775E1300C39AAB /* EnterPhoneNumerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D65C269C1C775E1300C39AAB /* EnterPhoneNumerVC.m */; };
 		D6CA600E1C739CE1008950E1 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6CA5FFB1C739CE1008950E1 /* Raleway-Black.ttf */; };
 		D6CA600F1C739CE1008950E1 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6CA5FFC1C739CE1008950E1 /* Raleway-BlackItalic.ttf */; };
 		D6CA60101C739CE1008950E1 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6CA5FFD1C739CE1008950E1 /* Raleway-Bold.ttf */; };
@@ -153,6 +158,16 @@
 		D62D2EC11C74FBFC00B9B994 /* CustomTextFieldFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextFieldFont.m; sourceTree = "<group>"; };
 		D62D2EC51C7500C800B9B994 /* VehicleInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleInfoViewController.h; sourceTree = "<group>"; };
 		D62D2EC61C7500C800B9B994 /* VehicleInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleInfoViewController.m; sourceTree = "<group>"; };
+		D65C268C1C771CBB00C39AAB /* VehicleMakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleMakeViewController.h; sourceTree = "<group>"; };
+		D65C268D1C771CBB00C39AAB /* VehicleMakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleMakeViewController.m; sourceTree = "<group>"; };
+		D65C268F1C771CC900C39AAB /* VehicleModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleModelViewController.h; sourceTree = "<group>"; };
+		D65C26901C771CC900C39AAB /* VehicleModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleModelViewController.m; sourceTree = "<group>"; };
+		D65C26931C772DB100C39AAB /* SelectedModelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedModelTableViewCell.h; sourceTree = "<group>"; };
+		D65C26941C772DB100C39AAB /* SelectedModelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedModelTableViewCell.m; sourceTree = "<group>"; };
+		D65C26971C774B0500C39AAB /* ModelLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelLocator.h; sourceTree = "<group>"; };
+		D65C26981C774B0500C39AAB /* ModelLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelLocator.m; sourceTree = "<group>"; };
+		D65C269B1C775E1300C39AAB /* EnterPhoneNumerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterPhoneNumerVC.h; sourceTree = "<group>"; };
+		D65C269C1C775E1300C39AAB /* EnterPhoneNumerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterPhoneNumerVC.m; sourceTree = "<group>"; };
 		D6CA5FFB1C739CE1008950E1 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
 		D6CA5FFC1C739CE1008950E1 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
 		D6CA5FFD1C739CE1008950E1 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
@@ -211,11 +226,14 @@
 		6A19B43C1C74754E0014DA12 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6A2210681C75938900553A25 /* SelfieVC */,
-				D62D2EC41C7500B300B9B994 /* Vehicle Info VC */,
 				D62D2EAD1C74E54700B9B994 /* Walkthrough VC */,
 				6A19B48A1C7487020014DA12 /* LoginVC */,
 				6A19B48B1C7487020014DA12 /* RegistrationVC */,
+				6A2210681C75938900553A25 /* SelfieVC */,
+				D62D2EC41C7500B300B9B994 /* Vehicle Info VC */,
+				D65C268A1C771C8100C39AAB /* Vehicle Make VC */,
+				D65C268B1C771C8100C39AAB /* Vehicle Model VC */,
+				D65C269A1C775DF600C39AAB /* Enter Phone Number VC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -491,9 +509,56 @@
 			path = "Vehicle Info VC";
 			sourceTree = "<group>";
 		};
+		D65C268A1C771C8100C39AAB /* Vehicle Make VC */ = {
+			isa = PBXGroup;
+			children = (
+				D65C268C1C771CBB00C39AAB /* VehicleMakeViewController.h */,
+				D65C268D1C771CBB00C39AAB /* VehicleMakeViewController.m */,
+			);
+			path = "Vehicle Make VC";
+			sourceTree = "<group>";
+		};
+		D65C268B1C771C8100C39AAB /* Vehicle Model VC */ = {
+			isa = PBXGroup;
+			children = (
+				D65C268F1C771CC900C39AAB /* VehicleModelViewController.h */,
+				D65C26901C771CC900C39AAB /* VehicleModelViewController.m */,
+				D65C26921C772D9700C39AAB /* TableViewCell */,
+			);
+			path = "Vehicle Model VC";
+			sourceTree = "<group>";
+		};
+		D65C26921C772D9700C39AAB /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D65C26931C772DB100C39AAB /* SelectedModelTableViewCell.h */,
+				D65C26941C772DB100C39AAB /* SelectedModelTableViewCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		D65C26961C774AE300C39AAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D65C26971C774B0500C39AAB /* ModelLocator.h */,
+				D65C26981C774B0500C39AAB /* ModelLocator.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D65C269A1C775DF600C39AAB /* Enter Phone Number VC */ = {
+			isa = PBXGroup;
+			children = (
+				D65C269B1C775E1300C39AAB /* EnterPhoneNumerVC.h */,
+				D65C269C1C775E1300C39AAB /* EnterPhoneNumerVC.m */,
+			);
+			path = "Enter Phone Number VC";
+			sourceTree = "<group>";
+		};
 		D6CA5FF91C739CCB008950E1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D65C26961C774AE300C39AAB /* Model */,
 				D62D2EBD1C74FBFC00B9B994 /* Custom Fonts */,
 				D62D2EBB1C74F6CE00B9B994 /* PCH */,
 				D62D2EB41C74F57600B9B994 /* Utility Class */,
@@ -685,13 +750,16 @@
 				6A19B53F1C74DD8D0014DA12 /* IQKeyboardManager.m in Sources */,
 				6AF5F8FE1C731ACA0080E974 /* main.m in Sources */,
 				6A22106B1C75939D00553A25 /* SelfieViewController.m in Sources */,
+				D65C268E1C771CBB00C39AAB /* VehicleMakeViewController.m in Sources */,
 				D62D2EC21C74FBFC00B9B994 /* CustomButtonFont.m in Sources */,
 				6A19B5491C74DD8D0014DA12 /* NSString+TextDirectionality.m in Sources */,
+				D65C269D1C775E1300C39AAB /* EnterPhoneNumerVC.m in Sources */,
 				6A19B48E1C7487150014DA12 /* RegistrationViewController.m in Sources */,
 				6A19B53E1C74DD8D0014DA12 /* IQUIWindow+Hierarchy.m in Sources */,
 				6A19B53A1C74DD8D0014DA12 /* IQNSArray+Sort.m in Sources */,
 				6A19B4401C7475A70014DA12 /* AppDelegate.m in Sources */,
 				6A19B5471C74DD8D0014DA12 /* JVFloatLabeledTextField.m in Sources */,
+				D65C26991C774B0500C39AAB /* ModelLocator.m in Sources */,
 				6A19B5451C74DD8D0014DA12 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				6A19B5401C74DD8D0014DA12 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				6A19B4891C7485990014DA12 /* RegistrationTableViewCell.m in Sources */,
@@ -703,8 +771,10 @@
 				D62D2EC71C7500C800B9B994 /* VehicleInfoViewController.m in Sources */,
 				6A19B5441C74DD8D0014DA12 /* IQToolbar.m in Sources */,
 				6A19B53C1C74DD8D0014DA12 /* IQUIView+Hierarchy.m in Sources */,
+				D65C26911C771CC900C39AAB /* VehicleModelViewController.m in Sources */,
 				6A19B5431C74DD8D0014DA12 /* IQTitleBarButtonItem.m in Sources */,
 				D62D2EB71C74F57600B9B994 /* ApplicationHelper.m in Sources */,
+				D65C26951C772DB100C39AAB /* SelectedModelTableViewCell.m in Sources */,
 				6A19B4911C7490E20014DA12 /* LoginViewController.m in Sources */,
 				6A19B5411C74DD8D0014DA12 /* IQTextView.m in Sources */,
 			);

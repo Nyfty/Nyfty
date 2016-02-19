@@ -25,6 +25,7 @@
 
 
 #import "ApplicationHelper.h"
+#import "ModelLocator.h"
 
 #endif /* PrefixHeader_pch */
 
