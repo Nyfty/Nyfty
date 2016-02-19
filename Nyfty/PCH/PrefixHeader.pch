@@ -23,8 +23,18 @@
 #define IS_IPHONE_6 (SCREEN_MAX_LENGTH == 667.0)
 #define IS_IPHONE_6P (SCREEN_MAX_LENGTH == 736.0)
 
+#define kCountryName        @"name"
+#define kCountryCallingCode @"dial_code"
+#define kCountryCode        @"code"
+
+
 
 #import "ApplicationHelper.h"
+#import "ValidationHelper.h"
+#import "TSMessage.h"
+#import "HexColors.h"
+#import "IQKeyboardManager.h"
+
 
 #endif /* PrefixHeader_pch */
 

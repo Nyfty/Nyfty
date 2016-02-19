@@ -32,6 +32,35 @@
 		6A19B54A1C74DD8D0014DA12 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A19B5391C74DD8D0014DA12 /* SMPageControl.m */; };
 		6A22106B1C75939D00553A25 /* SelfieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A22106A1C75939D00553A25 /* SelfieViewController.m */; };
 		6A22106F1C75B84A00553A25 /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A22106E1C75B84900553A25 /* HexColors.m */; };
+		6A2213D01C772BAC00553A25 /* PhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2213CF1C772BAC00553A25 /* PhoneViewController.m */; };
+		6A2213EB1C773FA400553A25 /* NotificationBackgroundError.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213D31C773FA400553A25 /* NotificationBackgroundError.png */; };
+		6A2213EC1C773FA400553A25 /* NotificationBackgroundError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213D41C773FA400553A25 /* NotificationBackgroundError@2x.png */; };
+		6A2213ED1C773FA400553A25 /* NotificationBackgroundErrorIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213D51C773FA400553A25 /* NotificationBackgroundErrorIcon.png */; };
+		6A2213EE1C773FA400553A25 /* NotificationBackgroundErrorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213D61C773FA400553A25 /* NotificationBackgroundErrorIcon@2x.png */; };
+		6A2213EF1C773FA400553A25 /* NotificationBackgroundMessage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213D71C773FA400553A25 /* NotificationBackgroundMessage.png */; };
+		6A2213F01C773FA400553A25 /* NotificationBackgroundMessage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213D81C773FA400553A25 /* NotificationBackgroundMessage@2x.png */; };
+		6A2213F11C773FA400553A25 /* NotificationBackgroundSuccess.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213D91C773FA400553A25 /* NotificationBackgroundSuccess.png */; };
+		6A2213F21C773FA400553A25 /* NotificationBackgroundSuccess@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213DA1C773FA400553A25 /* NotificationBackgroundSuccess@2x.png */; };
+		6A2213F31C773FA400553A25 /* NotificationBackgroundSuccessIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213DB1C773FA400553A25 /* NotificationBackgroundSuccessIcon.png */; };
+		6A2213F41C773FA400553A25 /* NotificationBackgroundSuccessIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213DC1C773FA400553A25 /* NotificationBackgroundSuccessIcon@2x.png */; };
+		6A2213F51C773FA400553A25 /* NotificationBackgroundWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213DD1C773FA400553A25 /* NotificationBackgroundWarning.png */; };
+		6A2213F61C773FA400553A25 /* NotificationBackgroundWarning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213DE1C773FA400553A25 /* NotificationBackgroundWarning@2x.png */; };
+		6A2213F71C773FA400553A25 /* NotificationBackgroundWarningIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213DF1C773FA400553A25 /* NotificationBackgroundWarningIcon.png */; };
+		6A2213F81C773FA400553A25 /* NotificationBackgroundWarningIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213E01C773FA400553A25 /* NotificationBackgroundWarningIcon@2x.png */; };
+		6A2213F91C773FA400553A25 /* NotificationButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213E11C773FA400553A25 /* NotificationButtonBackground.png */; };
+		6A2213FA1C773FA400553A25 /* NotificationButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213E21C773FA400553A25 /* NotificationButtonBackground@2x.png */; };
+		6A2213FB1C773FA400553A25 /* TSMessagesDefaultDesign.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A2213E31C773FA400553A25 /* TSMessagesDefaultDesign.json */; };
+		6A2213FC1C773FA400553A25 /* TSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2213E61C773FA400553A25 /* TSBlurView.m */; };
+		6A2213FD1C773FA400553A25 /* TSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2213E81C773FA400553A25 /* TSMessage.m */; };
+		6A2213FE1C773FA400553A25 /* TSMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2213EA1C773FA400553A25 /* TSMessageView.m */; };
+		6A2214021C77408F00553A25 /* ValidationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2214011C77408F00553A25 /* ValidationHelper.m */; };
+		6A2214061C77496200553A25 /* ConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2214051C77496200553A25 /* ConfirmationViewController.m */; };
+		6A2214131C77A93D00553A25 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A22140A1C77A93D00553A25 /* countries.json */; };
+		6A2214141C77A93D00553A25 /* CountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A22140C1C77A93D00553A25 /* CountryCell.m */; };
+		6A2214151C77A93D00553A25 /* CountryListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A22140E1C77A93D00553A25 /* CountryListDataSource.m */; };
+		6A2214161C77A93D00553A25 /* CountryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2214101C77A93D00553A25 /* CountryListViewController.m */; };
+		6A2214171C77A93D00553A25 /* CountryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A2214111C77A93D00553A25 /* CountryListViewController.xib */; };
+		6A2214181C77A93D00553A25 /* CountryPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6A2214121C77A93D00553A25 /* CountryPicker.bundle */; };
 		6AF5F8FE1C731ACA0080E974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF5F8FD1C731ACA0080E974 /* main.m */; };
 		6AF5F9091C731ACA0080E974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF5F9081C731ACA0080E974 /* Assets.xcassets */; };
 		6AF5F90C1C731ACA0080E974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF5F90A1C731ACA0080E974 /* LaunchScreen.storyboard */; };
@@ -131,6 +160,44 @@
 		6A22106A1C75939D00553A25 /* SelfieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieViewController.m; sourceTree = "<group>"; };
 		6A22106D1C75B84900553A25 /* HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
 		6A22106E1C75B84900553A25 /* HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColors.m; sourceTree = "<group>"; };
+		6A2213CE1C772BAC00553A25 /* PhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneViewController.h; sourceTree = "<group>"; };
+		6A2213CF1C772BAC00553A25 /* PhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneViewController.m; sourceTree = "<group>"; };
+		6A2213D31C773FA400553A25 /* NotificationBackgroundError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundError.png; sourceTree = "<group>"; };
+		6A2213D41C773FA400553A25 /* NotificationBackgroundError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundError@2x.png"; sourceTree = "<group>"; };
+		6A2213D51C773FA400553A25 /* NotificationBackgroundErrorIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundErrorIcon.png; sourceTree = "<group>"; };
+		6A2213D61C773FA400553A25 /* NotificationBackgroundErrorIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundErrorIcon@2x.png"; sourceTree = "<group>"; };
+		6A2213D71C773FA400553A25 /* NotificationBackgroundMessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundMessage.png; sourceTree = "<group>"; };
+		6A2213D81C773FA400553A25 /* NotificationBackgroundMessage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundMessage@2x.png"; sourceTree = "<group>"; };
+		6A2213D91C773FA400553A25 /* NotificationBackgroundSuccess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundSuccess.png; sourceTree = "<group>"; };
+		6A2213DA1C773FA400553A25 /* NotificationBackgroundSuccess@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundSuccess@2x.png"; sourceTree = "<group>"; };
+		6A2213DB1C773FA400553A25 /* NotificationBackgroundSuccessIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundSuccessIcon.png; sourceTree = "<group>"; };
+		6A2213DC1C773FA400553A25 /* NotificationBackgroundSuccessIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundSuccessIcon@2x.png"; sourceTree = "<group>"; };
+		6A2213DD1C773FA400553A25 /* NotificationBackgroundWarning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundWarning.png; sourceTree = "<group>"; };
+		6A2213DE1C773FA400553A25 /* NotificationBackgroundWarning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundWarning@2x.png"; sourceTree = "<group>"; };
+		6A2213DF1C773FA400553A25 /* NotificationBackgroundWarningIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundWarningIcon.png; sourceTree = "<group>"; };
+		6A2213E01C773FA400553A25 /* NotificationBackgroundWarningIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundWarningIcon@2x.png"; sourceTree = "<group>"; };
+		6A2213E11C773FA400553A25 /* NotificationButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationButtonBackground.png; sourceTree = "<group>"; };
+		6A2213E21C773FA400553A25 /* NotificationButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationButtonBackground@2x.png"; sourceTree = "<group>"; };
+		6A2213E31C773FA400553A25 /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
+		6A2213E51C773FA400553A25 /* TSBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBlurView.h; sourceTree = "<group>"; };
+		6A2213E61C773FA400553A25 /* TSBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBlurView.m; sourceTree = "<group>"; };
+		6A2213E71C773FA400553A25 /* TSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMessage.h; sourceTree = "<group>"; };
+		6A2213E81C773FA400553A25 /* TSMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessage.m; sourceTree = "<group>"; };
+		6A2213E91C773FA400553A25 /* TSMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMessageView.h; sourceTree = "<group>"; };
+		6A2213EA1C773FA400553A25 /* TSMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMessageView.m; sourceTree = "<group>"; };
+		6A2214001C77408F00553A25 /* ValidationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationHelper.h; sourceTree = "<group>"; };
+		6A2214011C77408F00553A25 /* ValidationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationHelper.m; sourceTree = "<group>"; };
+		6A2214041C77496200553A25 /* ConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationViewController.h; sourceTree = "<group>"; };
+		6A2214051C77496200553A25 /* ConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationViewController.m; sourceTree = "<group>"; };
+		6A22140A1C77A93D00553A25 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		6A22140B1C77A93D00553A25 /* CountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryCell.h; sourceTree = "<group>"; };
+		6A22140C1C77A93D00553A25 /* CountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryCell.m; sourceTree = "<group>"; };
+		6A22140D1C77A93D00553A25 /* CountryListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryListDataSource.h; sourceTree = "<group>"; };
+		6A22140E1C77A93D00553A25 /* CountryListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryListDataSource.m; sourceTree = "<group>"; };
+		6A22140F1C77A93D00553A25 /* CountryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryListViewController.h; sourceTree = "<group>"; };
+		6A2214101C77A93D00553A25 /* CountryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryListViewController.m; sourceTree = "<group>"; };
+		6A2214111C77A93D00553A25 /* CountryListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryListViewController.xib; sourceTree = "<group>"; };
+		6A2214121C77A93D00553A25 /* CountryPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CountryPicker.bundle; sourceTree = "<group>"; };
 		6AF5F8F91C731ACA0080E974 /* Nyfty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nyfty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF5F8FD1C731ACA0080E974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6AF5F9081C731ACA0080E974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,6 +278,8 @@
 		6A19B43C1C74754E0014DA12 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6A2214031C77495500553A25 /* ConfirmationCodeVC */,
+				6A2213C81C7727E900553A25 /* PhoneVC */,
 				6A2210681C75938900553A25 /* SelfieVC */,
 				D62D2EC41C7500B300B9B994 /* Vehicle Info VC */,
 				D62D2EAD1C74E54700B9B994 /* Walkthrough VC */,
@@ -232,6 +301,8 @@
 		6A19B4851C7485680014DA12 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				6A2213FF1C77408F00553A25 /* Validation */,
+				6A2213D11C773FA400553A25 /* TSMessage */,
 				6A22106C1C75B84900553A25 /* HexColor */,
 				6A19B50E1C74DD8D0014DA12 /* IQKeyBoardManager */,
 				6A19B5301C74DD8D0014DA12 /* JVFloatLabeledTextField */,
@@ -381,6 +452,96 @@
 				6A22106E1C75B84900553A25 /* HexColors.m */,
 			);
 			path = HexColor;
+			sourceTree = "<group>";
+		};
+		6A2213C81C7727E900553A25 /* PhoneVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A2214091C77A93D00553A25 /* CountryList */,
+				6A2213CE1C772BAC00553A25 /* PhoneViewController.h */,
+				6A2213CF1C772BAC00553A25 /* PhoneViewController.m */,
+			);
+			path = PhoneVC;
+			sourceTree = "<group>";
+		};
+		6A2213D11C773FA400553A25 /* TSMessage */ = {
+			isa = PBXGroup;
+			children = (
+				6A2213D21C773FA400553A25 /* Assets */,
+				6A2213E41C773FA400553A25 /* Classes */,
+			);
+			path = TSMessage;
+			sourceTree = "<group>";
+		};
+		6A2213D21C773FA400553A25 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6A2213D31C773FA400553A25 /* NotificationBackgroundError.png */,
+				6A2213D41C773FA400553A25 /* NotificationBackgroundError@2x.png */,
+				6A2213D51C773FA400553A25 /* NotificationBackgroundErrorIcon.png */,
+				6A2213D61C773FA400553A25 /* NotificationBackgroundErrorIcon@2x.png */,
+				6A2213D71C773FA400553A25 /* NotificationBackgroundMessage.png */,
+				6A2213D81C773FA400553A25 /* NotificationBackgroundMessage@2x.png */,
+				6A2213D91C773FA400553A25 /* NotificationBackgroundSuccess.png */,
+				6A2213DA1C773FA400553A25 /* NotificationBackgroundSuccess@2x.png */,
+				6A2213DB1C773FA400553A25 /* NotificationBackgroundSuccessIcon.png */,
+				6A2213DC1C773FA400553A25 /* NotificationBackgroundSuccessIcon@2x.png */,
+				6A2213DD1C773FA400553A25 /* NotificationBackgroundWarning.png */,
+				6A2213DE1C773FA400553A25 /* NotificationBackgroundWarning@2x.png */,
+				6A2213DF1C773FA400553A25 /* NotificationBackgroundWarningIcon.png */,
+				6A2213E01C773FA400553A25 /* NotificationBackgroundWarningIcon@2x.png */,
+				6A2213E11C773FA400553A25 /* NotificationButtonBackground.png */,
+				6A2213E21C773FA400553A25 /* NotificationButtonBackground@2x.png */,
+				6A2213E31C773FA400553A25 /* TSMessagesDefaultDesign.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6A2213E41C773FA400553A25 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6A2213E51C773FA400553A25 /* TSBlurView.h */,
+				6A2213E61C773FA400553A25 /* TSBlurView.m */,
+				6A2213E71C773FA400553A25 /* TSMessage.h */,
+				6A2213E81C773FA400553A25 /* TSMessage.m */,
+				6A2213E91C773FA400553A25 /* TSMessageView.h */,
+				6A2213EA1C773FA400553A25 /* TSMessageView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6A2213FF1C77408F00553A25 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				6A2214001C77408F00553A25 /* ValidationHelper.h */,
+				6A2214011C77408F00553A25 /* ValidationHelper.m */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		6A2214031C77495500553A25 /* ConfirmationCodeVC */ = {
+			isa = PBXGroup;
+			children = (
+				6A2214041C77496200553A25 /* ConfirmationViewController.h */,
+				6A2214051C77496200553A25 /* ConfirmationViewController.m */,
+			);
+			path = ConfirmationCodeVC;
+			sourceTree = "<group>";
+		};
+		6A2214091C77A93D00553A25 /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+				6A22140A1C77A93D00553A25 /* countries.json */,
+				6A22140B1C77A93D00553A25 /* CountryCell.h */,
+				6A22140C1C77A93D00553A25 /* CountryCell.m */,
+				6A22140D1C77A93D00553A25 /* CountryListDataSource.h */,
+				6A22140E1C77A93D00553A25 /* CountryListDataSource.m */,
+				6A22140F1C77A93D00553A25 /* CountryListViewController.h */,
+				6A2214101C77A93D00553A25 /* CountryListViewController.m */,
+				6A2214111C77A93D00553A25 /* CountryListViewController.xib */,
+				6A2214121C77A93D00553A25 /* CountryPicker.bundle */,
+			);
+			path = CountryList;
 			sourceTree = "<group>";
 		};
 		6AF5F8F01C731AC90080E974 = {
@@ -631,30 +792,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A2213F61C773FA400553A25 /* NotificationBackgroundWarning@2x.png in Resources */,
 				D6CA60121C739CE1008950E1 /* Raleway-ExtraBold.ttf in Resources */,
 				D6CA60201C739CE1008950E1 /* SIL Open Font License.txt in Resources */,
 				D6CA601D1C739CE1008950E1 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				6A2213FA1C773FA400553A25 /* NotificationButtonBackground@2x.png in Resources */,
 				6A19B4551C747BAA0014DA12 /* Atif.storyboard in Resources */,
 				D6CA600E1C739CE1008950E1 /* Raleway-Black.ttf in Resources */,
 				D6CA601B1C739CE1008950E1 /* Raleway-Regular.ttf in Resources */,
 				D6CA60151C739CE1008950E1 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				6A2213F01C773FA400553A25 /* NotificationBackgroundMessage@2x.png in Resources */,
+				6A2213EB1C773FA400553A25 /* NotificationBackgroundError.png in Resources */,
+				6A2213F41C773FA400553A25 /* NotificationBackgroundSuccessIcon@2x.png in Resources */,
+				6A2214131C77A93D00553A25 /* countries.json in Resources */,
+				6A2213EF1C773FA400553A25 /* NotificationBackgroundMessage.png in Resources */,
+				6A2213F91C773FA400553A25 /* NotificationButtonBackground.png in Resources */,
+				6A2213F51C773FA400553A25 /* NotificationBackgroundWarning.png in Resources */,
 				D6CA601E1C739CE1008950E1 /* Raleway-Thin.ttf in Resources */,
 				D6CA60181C739CE1008950E1 /* Raleway-LightItalic.ttf in Resources */,
 				D6CA60141C739CE1008950E1 /* Raleway-ExtraLight.ttf in Resources */,
 				D6CA60101C739CE1008950E1 /* Raleway-Bold.ttf in Resources */,
+				6A2213ED1C773FA400553A25 /* NotificationBackgroundErrorIcon.png in Resources */,
 				6AF5F90C1C731ACA0080E974 /* LaunchScreen.storyboard in Resources */,
 				D6CA60191C739CE1008950E1 /* Raleway-Medium.ttf in Resources */,
+				6A2213FB1C773FA400553A25 /* TSMessagesDefaultDesign.json in Resources */,
+				6A2213F71C773FA400553A25 /* NotificationBackgroundWarningIcon.png in Resources */,
+				6A2213F81C773FA400553A25 /* NotificationBackgroundWarningIcon@2x.png in Resources */,
 				D6CA601F1C739CE1008950E1 /* Raleway-ThinItalic.ttf in Resources */,
 				6A19B5461C74DD8D0014DA12 /* IQKeyboardManager.bundle in Resources */,
 				D6CA601C1C739CE1008950E1 /* Raleway-SemiBold.ttf in Resources */,
 				D6CA60111C739CE1008950E1 /* Raleway-BoldItalic.ttf in Resources */,
 				6AF5F9091C731ACA0080E974 /* Assets.xcassets in Resources */,
+				6A2213EE1C773FA400553A25 /* NotificationBackgroundErrorIcon@2x.png in Resources */,
 				D6CA600F1C739CE1008950E1 /* Raleway-BlackItalic.ttf in Resources */,
+				6A2213F21C773FA400553A25 /* NotificationBackgroundSuccess@2x.png in Resources */,
+				6A2214181C77A93D00553A25 /* CountryPicker.bundle in Resources */,
 				6A19B4451C7475B80014DA12 /* Main.storyboard in Resources */,
 				D6CA60171C739CE1008950E1 /* Raleway-Light.ttf in Resources */,
+				6A2213EC1C773FA400553A25 /* NotificationBackgroundError@2x.png in Resources */,
+				6A2214171C77A93D00553A25 /* CountryListViewController.xib in Resources */,
 				D6CA601A1C739CE1008950E1 /* Raleway-MediumItalic.ttf in Resources */,
+				6A2213F11C773FA400553A25 /* NotificationBackgroundSuccess.png in Resources */,
 				D6CA60161C739CE1008950E1 /* Raleway-Italic.ttf in Resources */,
 				D6CA60131C739CE1008950E1 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				6A2213F31C773FA400553A25 /* NotificationBackgroundSuccessIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,9 +866,11 @@
 				6A19B53F1C74DD8D0014DA12 /* IQKeyboardManager.m in Sources */,
 				6AF5F8FE1C731ACA0080E974 /* main.m in Sources */,
 				6A22106B1C75939D00553A25 /* SelfieViewController.m in Sources */,
+				6A2214141C77A93D00553A25 /* CountryCell.m in Sources */,
 				D62D2EC21C74FBFC00B9B994 /* CustomButtonFont.m in Sources */,
 				6A19B5491C74DD8D0014DA12 /* NSString+TextDirectionality.m in Sources */,
 				6A19B48E1C7487150014DA12 /* RegistrationViewController.m in Sources */,
+				6A2213D01C772BAC00553A25 /* PhoneViewController.m in Sources */,
 				6A19B53E1C74DD8D0014DA12 /* IQUIWindow+Hierarchy.m in Sources */,
 				6A19B53A1C74DD8D0014DA12 /* IQNSArray+Sort.m in Sources */,
 				6A19B4401C7475A70014DA12 /* AppDelegate.m in Sources */,
@@ -696,15 +879,22 @@
 				6A19B5401C74DD8D0014DA12 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				6A19B4891C7485990014DA12 /* RegistrationTableViewCell.m in Sources */,
 				6A19B53D1C74DD8D0014DA12 /* IQUIViewController+Additions.m in Sources */,
+				6A2213FD1C773FA400553A25 /* TSMessage.m in Sources */,
+				6A2214061C77496200553A25 /* ConfirmationViewController.m in Sources */,
+				6A2213FC1C773FA400553A25 /* TSBlurView.m in Sources */,
 				6A19B53B1C74DD8D0014DA12 /* IQUITextFieldView+Additions.m in Sources */,
 				6A19B5421C74DD8D0014DA12 /* IQBarButtonItem.m in Sources */,
 				6A19B5481C74DD8D0014DA12 /* JVFloatLabeledTextView.m in Sources */,
+				6A2214161C77A93D00553A25 /* CountryListViewController.m in Sources */,
 				D62D2EB01C74E54700B9B994 /* ViewController.m in Sources */,
 				D62D2EC71C7500C800B9B994 /* VehicleInfoViewController.m in Sources */,
+				6A2214021C77408F00553A25 /* ValidationHelper.m in Sources */,
 				6A19B5441C74DD8D0014DA12 /* IQToolbar.m in Sources */,
+				6A2213FE1C773FA400553A25 /* TSMessageView.m in Sources */,
 				6A19B53C1C74DD8D0014DA12 /* IQUIView+Hierarchy.m in Sources */,
 				6A19B5431C74DD8D0014DA12 /* IQTitleBarButtonItem.m in Sources */,
 				D62D2EB71C74F57600B9B994 /* ApplicationHelper.m in Sources */,
+				6A2214151C77A93D00553A25 /* CountryListDataSource.m in Sources */,
 				6A19B4911C7490E20014DA12 /* LoginViewController.m in Sources */,
 				6A19B5411C74DD8D0014DA12 /* IQTextView.m in Sources */,
 			);

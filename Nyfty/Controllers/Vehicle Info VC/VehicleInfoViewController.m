@@ -7,6 +7,8 @@
 //
 
 #import "VehicleInfoViewController.h"
+#import "PhoneViewController.h"
+
 
 @interface VehicleInfoViewController ()
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *rightConstraint;
@@ -83,6 +85,7 @@
     for (UIButton *btn in colorBtns) {
         if (btn.tag == tag) {
             [btn setImage:[UIImage imageNamed:@"checkmark-white"] forState:UIControlStateNormal];
+            [self digitScreen];
         }else{
             [btn setImage:nil forState:UIControlStateNormal];
         }
@@ -128,6 +131,12 @@
         default:
             break;
     }
+}
+
+-(void)digitScreen
+{
+    PhoneViewController *push = [[UIStoryboard storyboardWithName:@"Atif" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"PhoneViewController"];
+    [self.navigationController pushViewController:push animated:true];
 }
 
 -(IBAction)goBack:(id)sender

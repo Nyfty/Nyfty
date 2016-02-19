@@ -9,6 +9,14 @@
             <string>Raleway-Bold</string>
             <string>Raleway-Bold</string>
             <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
         </mutableArray>
         <mutableArray key="Raleway-Medium.ttf">
             <string>Raleway-Medium</string>
@@ -22,8 +30,12 @@
             <string>Raleway-Medium</string>
             <string>Raleway-Medium</string>
             <string>Raleway-Medium</string>
+            <string>Raleway-Medium</string>
+            <string>Raleway-Medium</string>
+            <string>Raleway-Medium</string>
         </mutableArray>
         <mutableArray key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
             <string>Raleway-SemiBold</string>
             <string>Raleway-SemiBold</string>
             <string>Raleway-SemiBold</string>
@@ -347,6 +359,7 @@
                     <connections>
                         <outlet property="btnFacebook" destination="V3Q-HS-ieq" id="MJU-z8-VT2"/>
                         <outlet property="emailCell" destination="wQO-7W-MHz" id="rwC-Wq-VqL"/>
+                        <outlet property="forgotPasswordCell" destination="tuO-as-22s" id="btV-G6-caq"/>
                         <outlet property="loginFooterView" destination="scC-g7-qS8" id="Ocj-i1-2Nt"/>
                         <outlet property="loginHeaderView" destination="Vwb-tN-28F" id="SCO-uq-8yW"/>
                         <outlet property="loginTableView" destination="E6A-CL-R7v" id="fla-Rz-Mlw"/>
@@ -354,6 +367,41 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79t-Pc-Cty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="tuO-as-22s">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tuO-as-22s" id="Vau-UQ-PoQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tX8-in-R9j">
+                                <rect key="frame" x="40" y="14" width="333" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Forgot ">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="username">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="14.4" name="Raleway-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" or password?">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </tableViewCellContentView>
+                </tableViewCell>
                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="wQO-7W-MHz" customClass="RegistrationTableViewCell">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                     <autoresizingMask key="autoresizingMask"/>
@@ -498,11 +546,354 @@
             </objects>
             <point key="canvasLocation" x="516" y="253"/>
         </scene>
+        <!--Phone View Controller-->
+        <scene sceneID="WhV-86-TYG">
+            <objects>
+                <viewController storyboardIdentifier="PhoneViewController" id="9YY-DX-YhH" customClass="PhoneViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JDs-MU-roz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digits Please" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p3D-0a-AZM">
+                                <rect key="frame" x="106" y="93" width="202" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="19.860000610351562"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's verify your phone number." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="evw-X8-MJw">
+                                <rect key="frame" x="20" y="155" width="374" height="29"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14.340000152587891"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456789" textAlignment="natural" minimumFontSize="17" id="Q2X-kX-hPC">
+                                <rect key="frame" x="30" y="209" width="267" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16.549999237060547"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9YY-DX-YhH" id="hSq-JD-qrO"/>
+                                </connections>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gje-ug-nhN">
+                                <rect key="frame" x="305" y="218" width="16" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cross"/>
+                                <connections>
+                                    <action selector="clearText:" destination="9YY-DX-YhH" eventType="touchUpInside" id="JpR-Zz-seq"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="Dcb-Oe-72D">
+                                <rect key="frame" x="30" y="257" width="351" height="1"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t00-z2-MyG">
+                                <rect key="frame" x="30" y="316" width="351" height="48"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send Confirmation Code">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendConfirmationCode:" destination="9YY-DX-YhH" eventType="touchUpInside" id="ZR8-3Y-8om"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane-send-darkblue" id="f77-5R-Pc9">
+                                <rect key="frame" x="49" y="328" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4MI-1Q-eoH">
+                                <rect key="frame" x="30" y="385" width="351" height="74"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">By Tapping "Send Confirmation Code" above. Nyfty LLC will send you an SMS to confirm your phone number.Message &amp; data rates apply.</string>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12.130000114440918"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="33u-CR-tzT">
+                                <rect key="frame" x="338" y="214" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="changeFlag:" destination="9YY-DX-YhH" eventType="touchUpInside" id="jjP-Mv-d4r"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="Pfo-Am-Ua7">
+                                <rect key="frame" x="53" y="330" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z0K-ME-aaL">
+                                <rect key="frame" x="2" y="28" width="55" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nav-arrow-back-blue"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="DHd-rr-Exh" eventType="touchUpInside" id="Y6S-3X-X9A"/>
+                                    <action selector="backButtonPressed:" destination="Amv-cI-kxJ" eventType="touchUpInside" id="qJt-8j-c9c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="airPlaneImageview" destination="f77-5R-Pc9" id="66g-bQ-MRr"/>
+                        <outlet property="btnCross" destination="Gje-ug-nhN" id="nLR-Ae-Tie"/>
+                        <outlet property="btnFlag" destination="33u-CR-tzT" id="e2B-3d-A3v"/>
+                        <outlet property="btnSendCode" destination="t00-z2-MyG" id="uZ3-iz-2Ng"/>
+                        <outlet property="indicatorview" destination="Pfo-Am-Ua7" id="IUl-z3-l7s"/>
+                        <outlet property="phoneNumberTextfield" destination="Q2X-kX-hPC" id="Xo7-D2-2bL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bFe-1Q-mko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="-91"/>
+        </scene>
+        <!--Confirmation View Controller-->
+        <scene sceneID="lEd-0b-BSo">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmationViewController" id="fK2-IY-UTj" customClass="ConfirmationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A2A-M4-HrG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6-Digit Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Lw-y4-pJW">
+                                <rect key="frame" x="97" y="89" width="220" height="41"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="19.860000610351562"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" id="ouV-iG-L3v">
+                                <rect key="frame" x="97" y="140" width="220" height="73"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Your code is on its way! Didn't get it ? ">
+                                            <attributes>
+                                                <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="14.300000000000001" name="Raleway-SemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Request Another.">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="14.300000000000001" name="Raleway-SemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titlelabel.numberoflines">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.textAlignment">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" id="hdh-QX-MYz">
+                                <rect key="frame" x="53" y="275" width="40" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="GP7-Ex-2wQ">
+                                <rect key="frame" x="106" y="275" width="40" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="6q9-6c-XNx">
+                                <rect key="frame" x="159" y="275" width="40" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="a0X-qd-CBB">
+                                <rect key="frame" x="212" y="275" width="40" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Y7O-SJ-Nb0">
+                                <rect key="frame" x="267" y="275" width="40" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="VeI-XW-seA">
+                                <rect key="frame" x="320" y="275" width="40" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="P2q-v8-BYX">
+                                <rect key="frame" x="53" y="227" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fK2-IY-UTj" id="6M2-qp-8N1"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="5MC-GO-mST">
+                                <rect key="frame" x="106" y="227" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fK2-IY-UTj" id="nfE-ef-ur1"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="JzR-7J-ZCV">
+                                <rect key="frame" x="159" y="227" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fK2-IY-UTj" id="tS3-fP-Pem"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="EHi-md-jDD">
+                                <rect key="frame" x="212" y="227" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fK2-IY-UTj" id="tbz-PT-rm6"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="Kdc-fd-oxa">
+                                <rect key="frame" x="267" y="227" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fK2-IY-UTj" id="fmL-tH-g6E"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="EIq-7U-GTi">
+                                <rect key="frame" x="320" y="227" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fK2-IY-UTj" id="Dro-4M-dNh"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mIE-lF-POJ">
+                                <rect key="frame" x="2" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nav-arrow-back-blue"/>
+                                <connections>
+                                    <action selector="goBack:" destination="fK2-IY-UTj" eventType="touchUpInside" id="YG9-uU-xyE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ggE-P7-DPq">
+                                <rect key="frame" x="53" y="357" width="307" height="52"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="By confirming the 6-digit code above. you agree to Nifty LLC's ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19379340277777779" green="0.19379340277777779" blue="0.19379340277777779" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Raleway-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Terms of Services">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19379340277777779" green="0.19379340277777779" blue="0.19379340277777779" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Raleway-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" &amp; ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19379340277777779" green="0.19379340277777779" blue="0.19379340277777779" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Raleway-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy Policy">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Raleway-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=".">
+                                        <attributes>
+                                            <color key="NSColor" red="0.19379340277777779" green="0.19379340277777779" blue="0.19379340277777779" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="Raleway-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="r36-Re-eVh">
+                                <rect key="frame" x="99" y="167" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verifying......" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oiT-9n-4lm">
+                                <rect key="frame" x="127" y="167" width="160" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="16.559999465942383"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rxd-So-TQR">
+                                <rect key="frame" x="0.0" y="463" width="414" height="54"/>
+                                <color key="backgroundColor" red="0.6705882353" green="0.83137254900000002" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PZ2-jh-M5o">
+                                <rect key="frame" x="359" y="478" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nav-arrow-forward-white"/>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark-grey" id="UNG-fB-e8Y">
+                                <rect key="frame" x="97" y="165" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="r36-Re-eVh" id="M86-7x-y3X"/>
+                        <outlet property="btnArrow" destination="PZ2-jh-M5o" id="DyA-JW-qDo"/>
+                        <outlet property="btnNext" destination="Rxd-So-TQR" id="do2-h0-Zxg"/>
+                        <outlet property="btnRequestAnother" destination="ouV-iG-L3v" id="rE6-aJ-6oz"/>
+                        <outlet property="checkMarkImageview" destination="UNG-fB-e8Y" id="s4p-Iy-hlu"/>
+                        <outlet property="lblVerifying" destination="oiT-9n-4lm" id="JuN-Y7-oZk"/>
+                        <outlet property="textField1" destination="P2q-v8-BYX" id="Cs4-fA-CpH"/>
+                        <outlet property="textField2" destination="5MC-GO-mST" id="RLi-oz-EOs"/>
+                        <outlet property="textField3" destination="JzR-7J-ZCV" id="Tmm-9Q-X7x"/>
+                        <outlet property="textField4" destination="EHi-md-jDD" id="Eow-ux-9yc"/>
+                        <outlet property="textField5" destination="Kdc-fd-oxa" id="T4q-Re-IXx"/>
+                        <outlet property="textField6" destination="EIq-7U-GTi" id="Vau-8X-xpi"/>
+                        <outlet property="view1" destination="hdh-QX-MYz" id="1lG-N4-ICP"/>
+                        <outlet property="view2" destination="GP7-Ex-2wQ" id="yhX-Ph-csQ"/>
+                        <outlet property="view3" destination="6q9-6c-XNx" id="Zcj-uK-oM9"/>
+                        <outlet property="view4" destination="a0X-qd-CBB" id="Rcj-By-qqD"/>
+                        <outlet property="view5" destination="Y7O-SJ-Nb0" id="vzN-ky-8x0"/>
+                        <outlet property="view6" destination="VeI-XW-seA" id="A7N-NJ-gPi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eze-xb-Gtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="-136"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="airplane-send-darkblue" width="24" height="24"/>
         <image name="camera-blue" width="20" height="20"/>
+        <image name="checkmark-grey" width="24" height="24"/>
+        <image name="cross" width="16" height="15"/>
         <image name="nav-arrow-back-blue" width="24" height="24"/>
         <image name="nav-arrow-forward-white" width="24" height="24"/>
         <image name="profile-silhouette-ios" width="201" height="201"/>
+        <image name="us" width="32" height="21"/>
     </resources>
 </document>

@@ -38,7 +38,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 3;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -51,6 +51,11 @@
     else if (indexPath.row == 1)
     {
         regCell = self.passwordCell;
+        
+    }
+    else if (indexPath.row == 2)
+    {
+        regCell = self.forgotPasswordCell;
         
     }
     

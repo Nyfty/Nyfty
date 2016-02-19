@@ -13,6 +13,7 @@
 
 @property (nonatomic , strong) IBOutlet RegistrationTableViewCell *emailCell;
 @property (nonatomic , strong) IBOutlet RegistrationTableViewCell *passwordCell;
+@property (nonatomic , strong) IBOutlet UITableViewCell *forgotPasswordCell;
 @property (nonatomic , strong) IBOutlet UIView *loginHeaderView;
 @property (nonatomic , strong) IBOutlet UIView *loginFooterView;
 @property (nonatomic , strong) IBOutlet UITableView *loginTableView;
